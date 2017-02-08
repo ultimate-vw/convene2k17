@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="yalantis.com.sidemenu.sample.testBD">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <com.flavienlaurent.discrollview.lib.DiscrollView
+        android:id="@+id/fullscreen_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- here you put discrollvable views -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#007788"
+                discrollve:discrollve_alpha="true"
+                discrollve:discrollve_threshold="0.3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:padding="25dp"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:text="DOMAINS"/>
+            <!--PURPLE LAYOUT 1-->
+            <yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="gone"
+                android:background="#EFEBE9"
+                android:orientation="vertical"
+                discrollve:discrollve_threshold="0.9">
+                    <ImageView
+                        android:id="@+id/purpleView1"
+                        android:alpha="0"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/m_ai"
+                        android:translationX="-150dp" />
+                    <ImageView
+                        android:id="@+id/purpleView2"
+                        android:alpha="0"
+                        android:layout_width="220dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/m_cloud"
+                        android:translationX="100dp" />
+            </yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout>
+            <!--PURPLE LAYOUT 2-->
+            <yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="gone"
+                android:background="#FFFDE7"
+                android:orientation="vertical"
+                discrollve:discrollve_threshold="0.9">
+                <ImageView
+                    android:id="@+id/purpleView3"
+                    android:alpha="0"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/m_datamining"
+                    android:translationX="-150dp" />
+
+                <ImageView
+                    android:id="@+id/purpleView4"
+                    android:alpha="0"
+                    android:layout_width="220dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/m_embedded"
+                    android:translationX="100dp" />
+            </yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout1>
+            <!--PURPLE LAYOUT 3-->
+            <yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:visibility="gone"
+            android:background="#EFEBE9"
+            android:orientation="vertical"
+            discrollve:discrollve_threshold="0.9">
+                    <ImageView
+                        android:id="@+id/purpleView5"
+                        android:alpha="0"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/m_image_processing"
+                        android:translationX="-150dp" />
+                    <ImageView
+                        android:id="@+id/purpleView6"
+                        android:alpha="0"
+                        android:layout_width="220dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/m_iot"
+                        android:translationX="100dp" />
+            </yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout2>
+            <!--PURPLE LAYOUT 4-->
+            <yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout3
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="gone"
+                android:background="#FFFDE7"
+                android:orientation="vertical"
+                discrollve:discrollve_threshold="0.9">
+                        <ImageView
+                            android:id="@+id/purpleView7"
+                            android:alpha="0"
+                            android:layout_width="200dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/m_network_security"
+                            android:translationX="-150dp" />
+                        <ImageView
+                            android:id="@+id/purpleView8"
+                            android:alpha="0"
+                            android:layout_width="220dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/m_webapp"
+                            android:translationX="100dp" />
+            </yalantis.com.sidemenu.sample.DiscrollvablePurpleLayout3>
+        </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+    </com.flavienlaurent.discrollview.lib.DiscrollView>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <!--FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+
+        </LinearLayout>
+    </FrameLayout-->
+
+</FrameLayout>
